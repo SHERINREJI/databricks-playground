@@ -1,0 +1,36 @@
+Medallion Architecture
+----------------------
+
+Structured approach to organize data in lakehouse or data platform
+Breakdown data into three distinct layer : Bronze Layer, Silver Layer, Gold Layer
+
+Bronze Layer
+------------
+> first layer where raw, unprocessed data from different source is ingested into the system.
+> Raw data is stored exactly as it is received without modifications or transformations.
+> Support various formats like json, csv, psrquet or binary data like image and logs
+> Act as historical archive for audit or reprocessing.
+
+Silver Layer
+------------
+> Cleaned and transformed layer.
+> It prepare the data for analytics or machine learning by applying cleaning, validation and enrichment.
+
+Gold Layer
+----------
+> Optimized for end user consumption.
+> contains aggregated, ready to use data for reporting, dashboard and advanced analytics.
+
+Advantages
+----------
+> Scalability --> Allow each layer to scale independently.
+> Data quality --> By separating raw, cleaned and curated data it is easier to maintain quality and identify issues.
+> Reusability --> silver layer dataset can be reused by different teams by different purpose without needing to goback to raw data.
+> Auditability --> The bronze layer ensures the orginal data is always available for audit and reprocessing.
+> separation of concerns --> Each layer has a specific purpose makeds it easier to manage and maintain pipeline.
+
+Tools Used
+----------
+Bronze Layer --> Azure datafactory, Azure Blob/ ADLS for storage.
+Silver Layer --> Databricks with pyspark, or spark SQL for transformation.
+Gold Layer --> Synpse analytics, power bi for reporting.
