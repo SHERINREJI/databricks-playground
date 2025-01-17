@@ -1,0 +1,81 @@
+Databricks
+-----------
+Databricks is a tool that works with big data and to build machine learning models easier. It is like an online workspace where we can organize and analyze huge amount of data, all in one place.
+
+Uses of databricks
+-------------------
+> Cloud Power: It uses cloud resources, so no need to buy special hardware. It can handle large datasets and scale up as needed.
+> Run code on big data: we can write and run code in different languages like SQL, python and R directly in the browser to process data. This code run on spark cluster, which are group of computers that split up work to make it faster.
+> Collaborate easily: work together with teammates in real time. We can share notebooks and view results instantly, makes it ideal for data science and data engineering team.
+> Data storage and processing: Databricks connects to data lakes and organizes data into tables, makes it easier to use.
+> Automate Work:  We can schedule tasks and jobs, so they run automatically, allow us to build reliable data pipelines.
+> Machine Learning Friendly: It supports popular machine learning tools, making its easier to build, train and deploy models.
+
+Clusters
+--------
+A cluster is a group of computers or nodes that work together to process and analyse data.
+
+Advantages of cluster
+---------------------
+> Clusters are used to run codes, whether processing data, analysing it or building machine learning models.
+> Scalability: Can adjust the size and power of a cluster based on the amount of data. For smaller task use small cluster and for big data use larger one.
+> Spark Engine: databricks clusters are built on Apache spark, a powerful data processing engine that enables fast, distributed data processing. This means we can process large datasets across multiple machines at once.
+> Auto-Scaling: Clusters can automatically adjust their size based on the workload.
+  If need more power, databricks add more nodes and if need less it will scale down to save on costs.
+> Auto-Termination: Clusters can automatically shut down when they are idle , saving cost by not running unused resources.
+
+Different types of clusters
+----------------------------
+Interactive Cluster:
+--------------------
+These clusters are designed for interactive development in databricks notebooks.
+We can use them to run data exploration, data analysis and machine learning development.
+Ideal for analysts, data scientists and engineers who need to interactively explore data, experiment with code and visualize results.
+Auto scaling and termination.
+
+Job Clusters:
+-------------
+It is designed for running automated job and scheduled workflows.
+Each job submit gets its own dedicated cluster that is created just for the job and terminated when the job is completed.
+Used for production tasks like ETL pipelines, batch data processing and any scheduled or one time job.
+Cost Effective: They terminate immediately after completing their tasks, they help save on cluster costs.
+
+High concurrency clusters:
+--------------------------
+Optimized for multiple users and multiple concurrent tasks, makes them suitable for shared environments with high user demand.
+Used for BI tasks, dashboards and interactive queries in environment where multiple users access the same data concurrently.
+
+Single node clusters:
+---------------------
+Clusters run on single node.
+More cost effective for small scale tasks and testing code before scaling up to large clusters.
+Limitation: Not suitable for big data processing.
+
+Databricks serverless clusters:
+-------------------------------
+These are fully managed by databricks, so we don’t need to worry about setting up or managing the underlying servers.
+Great for business intelligence task and interactive data analysis in shared environment.
+Automatically adjust the resource based on what you need , which keep cost low.
+
+GPU Clusters
+------------
+It have graphic processing units (GPUs), powerful processor which can handle intense computations.
+Used for deep learning and complex machine learning task, GPU makes it faster to train models, when working with large dataset or complex calculations.
+Cost: It is more expensive than regular cluster so they are best used when we really need extra computing power.
+
+Cluster Pools
+-------------
+Pools of clusters that are ready to go at a moment notice.
+Great for environments with lots of quick, short jobs, because clusters are prewarmed, job start almost instantly, reducing waiting time.
+Lower costs by sharing resources across jobs and users and shutting down if they are unused for set period.
+
+
+•	Interactive Cluster: For development and experimentation.
+•	Job Clusters: For production jobs and scheduled workflows.
+•	High Concurrency Cluster: For shared, interactive BI workloads.
+•	Single-Node clusters: For testing or small-scale tasks.
+•	Serverless cluster: For managed, resource-effective BI and interactive tasks.
+•	GPU cluster: For deep learning and compute heavy machine learning.
+•	Cluster Pool: For reduced startup time across jobs.
+
+
