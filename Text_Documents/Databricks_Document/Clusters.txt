@@ -70,12 +70,12 @@ Great for environments with lots of quick, short jobs, because clusters are prew
 Lower costs by sharing resources across jobs and users and shutting down if they are unused for set period.
 
 
-•	Interactive Cluster: For development and experimentation.
-•	Job Clusters: For production jobs and scheduled workflows.
-•	High Concurrency Cluster: For shared, interactive BI workloads.
-•	Single-Node clusters: For testing or small-scale tasks.
-•	Serverless cluster: For managed, resource-effective BI and interactive tasks.
-•	GPU cluster: For deep learning and compute heavy machine learning.
-•	Cluster Pool: For reduced startup time across jobs.
+> Interactive Cluster: For development and experimentation.
+> Job Clusters: For production jobs and scheduled workflows.
+> High Concurrency Cluster: For shared, interactive BI workloads.
+> Single-Node clusters: For testing or small-scale tasks.
+> Serverless cluster: For managed, resource-effective BI and interactive tasks.
+> GPU cluster: For deep learning and compute heavy machine learning.
+> Cluster Pool: For reduced startup time across jobs.
 
 
